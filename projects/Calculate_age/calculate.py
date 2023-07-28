@@ -45,5 +45,7 @@ for m in range(1, localtime.tm_mon):
     day = day + month_days(m, leap_year)
 
 day = day + localtime.tm_mday
+hours = day * 24
 print("%s's age is %d years or " % (name, year), end="")
 print("%d months or %d days" % (month, day))
+print(f"{name}'s age in hours is {hours} hours")
